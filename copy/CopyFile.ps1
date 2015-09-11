@@ -2,7 +2,7 @@
 
 ##############################################
 #import module file.
-. C:\dba\script\copy\ParseConfFile.ps1
+. C:\dba\script\conf\ParseConfFile.ps1
 . C:\dba\script\copy\MakeFileList.ps1
 
 
