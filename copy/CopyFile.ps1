@@ -15,22 +15,14 @@ $SrcPath = $conf['SrcPath']
 $DstPath = $conf['DstPath']
 
 $flist = MaekFileListFile $SrcPath $date
+$fresult = $flist.Replace('.txt', '_result.txt');
 
 
 ##############################################
 # start copying.
+echo "start copy" $date.ToString() > $fresult
 Get-Content $flist | ForEach-Object {
     if ($_.ToString().Length -gt 0) {
-        $result = Robocopy.exe /r:2 $SrcPath $DstPath $_.ToString().Replace(' ', '')
+        Robocopy.exe /r:2 $SrcPath $DstPath $_.ToString().Replace(' ', '') >> $fresult
     }
 }
-
-
-##############################################
-## save result
-echo "================================================" >> $flist
-echo "copy result" >> $flist
-echo "================================================" >> $flist
-echo "" >> $flist;
-
-$result >> $flist;
