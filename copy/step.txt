@@ -1,7 +1,1 @@
-make file list file.
-	- find file by input date.
-	- compare like %date%
-send file list file to destination folder.
-copy local file to destination folder.
-	- make new folder on destination folder by today.
-
+make net use script for copy to remote shared folder.
