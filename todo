@@ -1,1 +1,7 @@
+make deleting old file script
+ - use conf file
+ - param : days of keep 
+ - save deleted info to delete_yyyymmdd_result.txt file with datetime.
+
+====
 make net use script for copy to remote shared folder.
