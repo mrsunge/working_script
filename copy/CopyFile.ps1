@@ -5,11 +5,13 @@
 . C:\dba\script\copy\MakeFileList.ps1
 
 
-$flist = MaekFileListFile $date
 $conf = ParseConfFile $ConfFileName
 
 $SrcPath = $conf['SrcPath']
 $DstPath = $conf['DstPath']
+
+$flist = MaekFileListFile $SrcPath $date
+
 
 echo "================================================" >> $flist
 echo "copy result" >> $flist
