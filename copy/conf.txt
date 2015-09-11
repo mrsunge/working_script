@@ -1,0 +1,4 @@
+ID=aaaa
+PW=bb
+SrcPath=c:/dba/script/copy
+DstPath=c:/temp/testcopy
