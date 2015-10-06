@@ -1,4 +1,5 @@
+Host=localhost
 ID=aaaa
 PW=bb
-SrcPath=c:/dba/script/copy
+SrcPath=c:/temp/source
 DstPath=c:/temp/testcopy
