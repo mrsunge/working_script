@@ -1,5 +1,5 @@
-Host=localhost
-ID=aaaa
-PW=bb
-SrcPath=c:/temp/source
+Host=\\testsource\source
+ID=id
+PW=pw
+SrcPath=\\testsource\source
 DstPath=c:/temp/testcopy
